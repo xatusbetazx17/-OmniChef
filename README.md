@@ -7,10 +7,24 @@ OmniChef is an open-source project designed to create a versatile 3D food printe
 
 > **Disclaimer**: This code and design are provided as-is and **must be adapted** to your hardware and local food-safety regulations. Always prioritize safe materials, hygiene, and correct operating procedures when dealing with edible prints.
 
+## 🖼 OmniChef 3D Printer Design
+
 ![OmniChef 3D Food Printer](onichef.png)
 
+---
 
-## Features
+## 📖 Table of Contents
+1. [Features](#features)
+2. [Repository Structure](#repository-structure)
+3. [Quick Start](#quick-start)
+4. [Bill of Materials](#bill-of-materials-bom)
+5. [Firmware & Software](#firmware--software)
+6. [License](#license)
+
+---
+
+
+## 🚀 Features
 
 - **Multi-Extruder** Support (up to 3 extruders in the default configuration).
 - **Food-Safe Materials** recommended (stainless steel, PTFE tubing, etc.).
@@ -51,11 +65,26 @@ Clone the repository:
 ~~~
 git clone https://github.com/xatusbetazx17/-OmniChef.git
 ~~~
+## 🔧 Setup:
+
 Review the Bill of Materials (hardware/BOM) and gather components.
 Assemble the printer following docs/mechanical-assembly.md.
 Flash the controller board (e.g., RAMPS 1.4, SKR, or Duet) with the Marlin config in firmware/marlin/.
 (Optional) Install Node.js and run the Web UI in software/web-ui/.
 Calibrate extruders, load ingredients, and enjoy your first 3D food print!
+
+## 🔩 Bill of Materials (BOM)
+
+Component	Description	Estimated Cost
+Frame	2020 Aluminum Extrusions, brackets, screws	~$50
+Motors	NEMA17 Stepper Motors (1 for each axis & extruder)	~$15 each
+Electronics	32-bit Controller (BTT SKR 1.4 / RAMPS 1.4)	~$50-$100
+Extruders	Chocolate, Dough, Sauce/Purée	~$40-$80 each
+Heating Module	IR/Laser (Optional, 30-50W)	~$30-$100
+Power Supply	24V, 360W+	~$30-$60
+Food-Grade Tubing	Stainless steel, PTFE, Silicone	~$10-$20
+
+
 
 # OmniChef Bill of Materials (BOM)
 
