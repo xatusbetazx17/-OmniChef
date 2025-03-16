@@ -26,17 +26,46 @@ OmniChef is an open-source project designed to create a versatile 3D food printe
 
 ## 🚀 Features
 
-- **Multi-Extruder** Support (up to 3 extruders in the default configuration).
-- **Food-Safe Materials** recommended (stainless steel, PTFE tubing, etc.).
-- **Custom G-code Macros** for IR/laser-based partial cooking.
-- **Open-Source Firmware** (Marlin) with minimal modifications for food-printing needs.
-- **Optional Web UI** (Node.js) to control printing, upload G-code, and track print progress.
+- **Multi-Extruder Support** (Up to 3 extruders)
+- **Food-Safe Materials** (Stainless steel, PTFE tubing)
+- **Custom G-code Macros** for **IR/laser-based** partial cooking
+- **Open-Source Firmware** (Marlin-based)
+- **Web UI (Node.js)** for controlling the printer
+- **AI-Based Ingredient Recognition** for food consistency validation
+- **Live Camera Monitoring** for remote supervision
+- **Multi-Layer Cooking** to cook/bake during printing
+- **Personalized Nutrition Mode** based on dietary needs
 
-## Repository Structure
+## 🔥 Advanced Features
 
-```plaintext
+### 🏆 **Smart Ingredient Handling**
+- **Auto-Refill System**: Sensors detect low levels & refill food paste automatically.
+- **Built-In Refrigeration & Heating**: Keeps perishable ingredients fresh.
+- **AI-Based Ingredient Recognition**: Prevents errors by analyzing food viscosity.
+
+### 🎯 **Precision Cooking & Printing**
+- **Multi-Layer Cooking**: Print, then cook different layers at controlled temperatures.
+- **Auto-Leveling & Calibration**: Ensures accurate food deposition.
+- **Multi-Ingredient Blending**: Mix two or more pastes before extrusion.
+
+### 📡 **AI & Remote Monitoring**
+- **Live Camera Monitoring**: Watch your food print remotely.
+- **Smart Web UI**: Adjust settings & receive alerts via a remote dashboard.
+- **AI-Generated Recipes**: Suggests optimal food-printing recipes based on available ingredients.
+
+### 📦 **Business & Scalability Features**
+- **Industrial-Scale Printing**: Print multiple meals at once.
+- **Smart Vending Machine Mode**: Users order fresh food via a touchscreen.
+- **Subscription-Based Food Printing**: Deliver pre-filled ingredient cartridges for home use.
+
+---
+
+## 📂 Repository Structure
+```
 omni-chef-3d-food-printer/
 ├── README.md
+├── images/
+│   ├── omni-chef-3d-printer.png
 ├── hardware/
 │   ├── cad/
 │   ├── electronics/
@@ -46,17 +75,20 @@ omni-chef-3d-food-printer/
 │       ├── Configuration.h
 │       ├── Configuration_adv.h
 │       ├── cooking_macros.gcode
+│       ├── ai_ingredient_recognition.py
+│       ├── auto_refill_module.py
 │       └── pins_USERMAPPING.h
 ├── software/
 │   ├── slicer-plugins/
 │   └── web-ui/
 │       ├── package.json
 │       ├── server.js
+│       ├── live_camera_feed.py
 │       └── public/
 └── docs/
     ├── mechanical-assembly.md
     ├── user-guide.md
-    └── cleaning-procedures.md
+    ├── cleaning-procedures.md
 ```
 
 ## Quick Start
@@ -73,16 +105,21 @@ Flash the controller board (e.g., RAMPS 1.4, SKR, or Duet) with the Marlin confi
 (Optional) Install Node.js and run the Web UI in software/web-ui/.
 Calibrate extruders, load ingredients, and enjoy your first 3D food print!
 
-## 🔩 Bill of Materials (BOM)
+---
 
-Component	Description	Estimated Cost
-Frame	2020 Aluminum Extrusions, brackets, screws	~$50
-Motors	NEMA17 Stepper Motors (1 for each axis & extruder)	~$15 each
-Electronics	32-bit Controller (BTT SKR 1.4 / RAMPS 1.4)	~$50-$100
-Extruders	Chocolate, Dough, Sauce/Purée	~$40-$80 each
-Heating Module	IR/Laser (Optional, 30-50W)	~$30-$100
-Power Supply	24V, 360W+	~$30-$60
-Food-Grade Tubing	Stainless steel, PTFE, Silicone	~$10-$20
+## 🔩 Bill of Materials (BOM)
+| **Component**           | **Description**                                      | **Estimated Cost** |
+|------------------------|----------------------------------------------------|----------------|
+| **Frame**             | 2020 Aluminum Extrusions, brackets, screws         | ~$50           |
+| **Motors**            | NEMA17 Stepper Motors (1 for each axis & extruder) | ~$15 each      |
+| **Electronics**       | 32-bit Controller (BTT SKR 1.4 / RAMPS 1.4)        | ~$50-$100      |
+| **Extruders**         | Chocolate, Dough, Sauce/Purée                      | ~$40-$80 each  |
+| **Heating Module**    | IR/Laser (Optional, 30-50W)                        | ~$30-$100      |
+| **Power Supply**      | 24V, 360W+                                          | ~$30-$60       |
+| **Food-Grade Tubing** | Stainless steel, PTFE, Silicone                    | ~$10-$20       |
+
+---
+
 
 
 
@@ -465,7 +502,7 @@ Test & Validate: Start with small calibration prints or simple shapes (like a sm
 Food Safety: Always ensure thorough cleaning and confirm materials that contact food are safe.
 
 
-## License
+## 📜 License
 
 MIT License
 
@@ -488,6 +525,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
 SOFTWARE.
+
+
+
+
+
 
 
 
