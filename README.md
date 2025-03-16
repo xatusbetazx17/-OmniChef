@@ -7,7 +7,7 @@ OmniChef is an open-source project designed to create a versatile 3D food printe
 
 > **Disclaimer**: This code and design are provided as-is and **must be adapted** to your hardware and local food-safety regulations. Always prioritize safe materials, hygiene, and correct operating procedures when dealing with edible prints.
 
-![OmniChef 3D Food Printer](images/omnichef.png)
+![OmniChef 3D Food Printer](images/onichef.png)
 
 
 ## Features
