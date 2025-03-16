@@ -46,7 +46,7 @@ omni-chef-3d-food-printer/
 
 Clone the repository:
 ~~~
-git clone https://github.com/YourUsername/omni-chef-3d-food-printer.git
+git clone https://github.com/XatusBetaZX17/omni-chef-3d-food-printer.git
 ~~~
 Review the Bill of Materials (hardware/BOM) and gather components.
 Assemble the printer following docs/mechanical-assembly.md.
